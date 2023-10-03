@@ -1,0 +1,27 @@
+.root-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Roboto';
+  margin: 0px;
+}
+
+.root-category-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  transform: translateX(-30px);
+}
+
+.root-category-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 8px 20px;
+  border: 1px dashed #747474;
+  border-radius: 2px;
+  margin: 0;
+}

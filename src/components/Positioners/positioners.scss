@@ -1,0 +1,53 @@
+.positioner {
+  position: fixed;
+  z-index: 3;
+  width: 30px;
+  height: 100px;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c8c8c8;
+  outline: transparent;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 6px #333333b1;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  & :only-child {
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover :only-child {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    outline: 1px solid #6a6a6a;
+  }
+}
+
+.positioner--left {
+  top: 50%;
+  left: 0px;
+}
+
+.positioner--right {
+  top: 50%;
+  right: 0px;
+  rotate: 180deg;
+}
+
+.positioner--up {
+  top: 50px;
+  left: 50%;
+  rotate: 90deg;
+  transform: translateX(-110%);
+}
+
+.positioner--down {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-110%);
+  rotate: -90deg;
+}
